@@ -83,7 +83,7 @@ export default class EditMovie extends Component {
 
     console.log(movie);
 
-    axios.post('http://localhost:5000/api/movies/update/' + this.props.match.params.id, movie)
+    axios.post('/api/movies/update/' + this.props.match.params.id, movie)
       .then(res => console.log(res.data));
 
     window.location = '/';
