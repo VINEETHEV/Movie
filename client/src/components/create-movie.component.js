@@ -66,7 +66,7 @@ export default class CreateMovie extends Component {
 
     console.log(movie);
 
-    axios.post('http://localhost:5000/api/movies/add', movie)
+    axios.post('/api/movies/add', movie)
       .then(res => console.log(res.data));
 
     window.location = '/';
