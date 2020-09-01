@@ -22,7 +22,7 @@ export default class EditMovie extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:5000/api/movies/'+this.props.match.params.id)
+    axios.get('/api/movies/'+this.props.match.params.id)
       .then(response => {
         this.setState({
           name: response.data.name,
